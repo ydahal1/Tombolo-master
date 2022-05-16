@@ -16,6 +16,8 @@ RUN apt-get update && apt-get install -y bash dos2unix
 
 RUN dos2unix /app/docker-entry.sh
 
+EXPOSE 3000
+
 ENV DEBIAN_FRONTEND noninteractive
 ENV DEBCONF_NONINTERACTIVE_SEEN true
 
