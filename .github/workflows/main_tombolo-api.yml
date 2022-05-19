@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: hpccsollabacr.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_2d56e9976846421ab5836c07eefc1f9d }}/tombolo-node:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./server/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
